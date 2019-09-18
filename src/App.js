@@ -15,8 +15,6 @@ class App extends React.Component {
 
   handleChange = (event) => {
     this.setState({search: event});
-    // console.log(this.search('hello'))
-    // this.search(this.state.search)
   }
 
   search = (query) => {
@@ -29,12 +27,10 @@ class App extends React.Component {
   }
 
   render() {
-    // const search = this.state.search;
       console.log(this.state.movies)
     return (
       <div className="app-container">
         <SearchBar
-          // search={this.handleChange}
           onValueChange={this.search}
         />
 
