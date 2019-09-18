@@ -2,7 +2,10 @@ import React from 'react';
 import './css/App.css';
 
 import SearchBar from './components/SearchBar';
-import MovieList from './components/MovieList'
+import MovieList from './components/MovieList';
+import SelectedMovie from './components/SelectedMovie';
+import MovieCard from './components/MovieCard';
+
 
 
 class App extends React.Component {
@@ -11,6 +14,7 @@ class App extends React.Component {
     this.state = {
       search: '',
       movies: [],
+      selectedMovie: {},
     };
   }
 
@@ -18,13 +22,23 @@ class App extends React.Component {
     this.setState({search: event});
   }
 
-  search = (query) => {
-    let url = `http://www.omdbapi.com/?apikey=924ba45c&s=${query}`
+  search = (type, query) => {
+    let url = `http://www.omdbapi.com/?apikey=924ba45c&${type}=${query}`
 
-    fetch(url)
-      .then(response => response.json())
-      .then(data => this.setState({movies: data.Search}))
-      // .then(console.log('hi bro'))
+    if (type === 's') {
+      fetch(url)
+        .then(response => response.json())
+        .then(data => this.setState({
+            movies: data.Search,
+            selectedMovie: {}
+          })
+        )
+    } else
+      fetch(url)
+        .then(response => response.json())
+        // .then(data => console.log(data))
+        .then(data => this.setState({selectedMovie: data}))
+        // .then(console.log(this.state.selectedMovie))
 
   }
 
@@ -36,7 +50,11 @@ class App extends React.Component {
           onValueChange={this.search}
         />
 
-        <MovieList movies={this.state.movies} />
+        <div className="display-container">
+          {this.state.selectedMovie.hasOwnProperty('Title') ? <MovieCard movie={this.state.selectedMovie} /> : false}
+
+          <MovieList movies={this.state.movies} newSearch={this.search} />
+        </div>
 
       </div>
     );

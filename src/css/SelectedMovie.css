@@ -1,0 +1,24 @@
+
+
+.poster img {
+  height: 300px;
+  width: 180px;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+.selected-movie{
+  display: flex;
+  justify-content: space-between;
+}
+
+.one-title {
+  font-family: 'Heebo', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 0px;
+}
+
+.actors {
+  font-family: 'Noto Sans KR'
+}

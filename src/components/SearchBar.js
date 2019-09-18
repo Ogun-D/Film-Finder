@@ -6,7 +6,7 @@ class SearchBar extends React.Component {
   handleSubmit = (event) => {
     event.preventDefault();
     const search = document.querySelector('.movie-search');
-    this.props.onValueChange(search.value);
+    this.props.onValueChange('s', search.value);
   }
 
   render() {

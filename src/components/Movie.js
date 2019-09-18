@@ -1,10 +1,15 @@
 import React from 'react';
 import '../css/Movie.css'
+// import App from '../App.js'
 
 class Movie extends React.Component {
 
 
-
+  handleClick = () => {
+    const title = this.props.title;
+    this.props.selectedMovie('t', title);
+    // console.log(this);
+  }
 
   render() {
     const src = this.props.src;
@@ -15,8 +20,7 @@ class Movie extends React.Component {
       <div className="movie" onClick={this.handleClick}>
         <img src={src === "N/A" ? pic : src} alt={title} />
         <div className="movie-info">
-          <p className="movie-title">{title}</p>
-          <p className="year">{year}</p>
+          <p className="movie-title">{title} ({year})</p>
         </div>
       </div>
     )

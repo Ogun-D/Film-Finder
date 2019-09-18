@@ -14,6 +14,7 @@ const MovieList = (props) => {
           alt={movie.Title}
           title={movie.Title}
           year={movie.Year}
+          selectedMovie={props.newSearch}
         />
       )}
     </div>
