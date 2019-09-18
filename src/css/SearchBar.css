@@ -6,7 +6,33 @@
   justify-content: center;
 }
 
-.song-search {
-  width: 200px;
-  height: 20px;
+.movie-selector {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.movie-search {
+  width: 250px;
+  height: 25px;
+  border: 1px solid #ec2942;
+  border-radius: 8px;
+  font-size: 20px;
+  padding-left: 5px;
+  margin-right: 8px;
+  box-shadow: 1px 1px 5px #909090;
+}
+
+.sub-button {
+  color: white;
+  background-color: dodgerblue;
+  height: 30px;
+  border: 1px solid dodgerblue;
+  width: 100px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 5px #909090;
+}
+
+.sub-button:hover {
+  cursor: pointer;
 }

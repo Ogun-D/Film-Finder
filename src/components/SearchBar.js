@@ -5,7 +5,7 @@ class SearchBar extends React.Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
-    const search = document.querySelector('.song-search');
+    const search = document.querySelector('.movie-search');
     this.props.onValueChange(search.value);
   }
 
@@ -13,13 +13,13 @@ class SearchBar extends React.Component {
     return(
       <div className="search-bar">
 
-        <form className="song-selector" onSubmit={this.handleSubmit} >
+        <form className="movie-selector" onSubmit={this.handleSubmit} >
           <input
             type="text"
-            placeholder="Search for a Song"
-            className="song-search"
+            placeholder="Search for a Movie"
+            className="movie-search"
           />
-          <button type="submit">Find this Song</button>
+          <button type="submit" className="sub-button">Find Movie!</button>
         </form>
 
       </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import './css/App.css';
 
 import SearchBar from './components/SearchBar';
+import MovieList from './components/MovieList'
 
 
 class App extends React.Component {
@@ -23,16 +24,19 @@ class App extends React.Component {
     fetch(url)
       .then(response => response.json())
       .then(data => this.setState({movies: data.Search}))
+      // .then(console.log('hi bro'))
 
   }
 
   render() {
-      console.log(this.state.movies)
+      // console.log(this.state.movies)
     return (
       <div className="app-container">
         <SearchBar
           onValueChange={this.search}
         />
+
+        <MovieList movies={this.state.movies} />
 
       </div>
     );
