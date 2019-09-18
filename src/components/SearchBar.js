@@ -9,17 +9,16 @@ class SearchBar extends React.Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
-
     const search = document.querySelector('.song-search');
-    console.log(search.value);
+    this.props.onValueChange(search.value);
   }
 
-  handleChange = (event) => {
-    this.props.onValueChange(event.target.value);
-  }
+  // handleChange = (event) => {
+  //   this.props.onValueChange(event.target.value);
+  // }
 
   render() {
-    const search = this.props.search;
+    // const search = this.props.search;
     return(
       <div className="search-bar">
 
@@ -28,8 +27,9 @@ class SearchBar extends React.Component {
             type="text"
             placeholder="Search for a Song"
             className="song-search"
-            value={search}
-            onChange={this.handleChange} />
+            // value={search}
+            // onChange={this.handleChange}
+          />
           <button type="submit">Find this Song</button>
         </form>
 
