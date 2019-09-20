@@ -32,7 +32,7 @@ class App extends React.Component {
             movies: data.Search,
             selectedMovie: {}
           }) :
-          alert("Movie not found. Please search again")
+          alert("Film not found. Please search again")
         )
     } else
       fetch(url)
@@ -50,7 +50,7 @@ class App extends React.Component {
         <div className="display-container">
           {this.state.selectedMovie.hasOwnProperty('Title') ? <MovieCard movie={this.state.selectedMovie} /> : false}
 
-          {this.state.movies.length > 0 ? <h3 className="select-prompt">Select a Movie to see more info</h3> : false}
+          {this.state.movies.length > 0 ? <h3 className="select-prompt">Select a Film to see more info</h3> : false}
           <MovieList movies={this.state.movies} newSearch={this.search} />
         </div>
 

@@ -8,7 +8,7 @@ class SearchBar extends React.Component {
     const search = document.querySelector('.movie-search');
 
     if (search.value === '') {
-      alert("Please Enter a Movie")
+      alert("Please Enter a Film")
     } else
     this.props.onValueChange('s', search.value);
   }
@@ -20,10 +20,10 @@ class SearchBar extends React.Component {
         <form className="movie-selector" onSubmit={this.handleSubmit} >
           <input
             type="text"
-            placeholder="Search for a Movie"
+            placeholder="Search for a Film"
             className="movie-search"
           />
-          <button type="submit" className="sub-button">Find Movie!</button>
+          <button type="submit" className="sub-button">Find Film!</button>
         </form>
 
       </div>
