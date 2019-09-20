@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/film-finder/static/css/main.8e4c9342.chunk.css",
-    "main.js": "/film-finder/static/js/main.6bc66df5.chunk.js",
-    "main.js.map": "/film-finder/static/js/main.6bc66df5.chunk.js.map",
-    "runtime~main.js": "/film-finder/static/js/runtime~main.92184784.js",
-    "runtime~main.js.map": "/film-finder/static/js/runtime~main.92184784.js.map",
-    "static/js/2.f66d9c97.chunk.js": "/film-finder/static/js/2.f66d9c97.chunk.js",
-    "static/js/2.f66d9c97.chunk.js.map": "/film-finder/static/js/2.f66d9c97.chunk.js.map",
-    "index.html": "/film-finder/index.html",
-    "precache-manifest.1308c0401bc32300705468400f244ad3.js": "/film-finder/precache-manifest.1308c0401bc32300705468400f244ad3.js",
-    "service-worker.js": "/film-finder/service-worker.js",
-    "static/css/main.8e4c9342.chunk.css.map": "/film-finder/static/css/main.8e4c9342.chunk.css.map"
+    "main.css": "/Film-Finder/static/css/main.8e4c9342.chunk.css",
+    "main.js": "/Film-Finder/static/js/main.a8476984.chunk.js",
+    "main.js.map": "/Film-Finder/static/js/main.a8476984.chunk.js.map",
+    "runtime~main.js": "/Film-Finder/static/js/runtime~main.5ddc2810.js",
+    "runtime~main.js.map": "/Film-Finder/static/js/runtime~main.5ddc2810.js.map",
+    "static/js/2.f66d9c97.chunk.js": "/Film-Finder/static/js/2.f66d9c97.chunk.js",
+    "static/js/2.f66d9c97.chunk.js.map": "/Film-Finder/static/js/2.f66d9c97.chunk.js.map",
+    "index.html": "/Film-Finder/index.html",
+    "precache-manifest.51dcfdd36df0d39b3361f18bd5778e30.js": "/Film-Finder/precache-manifest.51dcfdd36df0d39b3361f18bd5778e30.js",
+    "service-worker.js": "/Film-Finder/service-worker.js",
+    "static/css/main.8e4c9342.chunk.css.map": "/Film-Finder/static/css/main.8e4c9342.chunk.css.map"
   }
 }
