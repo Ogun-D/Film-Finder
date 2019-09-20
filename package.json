@@ -2,7 +2,7 @@
   "name": "first-react-project",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Ogun-D.github.io/film-finder",
+  "homepage": "https://Ogun-D.github.io/Film-Finder",
   "dependencies": {
     "gh-pages": "^2.1.1",
     "react": "^16.9.0",
