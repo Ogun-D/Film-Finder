@@ -23,7 +23,7 @@ class App extends React.Component {
   }
 
   search = (type, query) => {
-    let url = `http://www.omdbapi.com/?apikey=924ba45c&${type}=${query}`
+    let url = `https://www.omdbapi.com/?apikey=924ba45c&${type}=${query}`
 
     if (type === 's') {
       fetch(url)
