@@ -1,10 +1,18 @@
-.movie-card {
-  display: flex;
-  height: 400px;
-  margin-bottom: 20px;
-  width: 85.5%;
-  justify-content: center;
-  align-items: center;
-/*  border-radius: 4px;
-  box-shadow: 1px 1px 5px #909090;*/
+@media screen and (min-width: 1224px) {
+  .movie-card {
+    display: flex;
+    height: 300px;
+    margin: 0px auto;
+    width: 1050px;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+  }
 }
+
+/*6, 7, 8*/
+/*@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+  .movie-card {
+    display: table;
+  }
+}
+*/

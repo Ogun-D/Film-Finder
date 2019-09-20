@@ -36,3 +36,29 @@
 .sub-button:hover {
   cursor: pointer;
 }
+
+/*6, 7, 8*/
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) {
+  .movie-selector {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    width: 300px;
+  }
+}
+
+/*5, SE, and GalaxyS5*/
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) {
+  .search-bar {
+    display: block;
+    height: 50px;
+  }
+
+  .movie-selector {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    width: 200px;
+  }
+}
+

@@ -1,8 +1,17 @@
-.movie-list {
-  display: grid;
-  grid-template-columns: 200px 200px 200px 200px 200px;
-  grid-column-gap: 15px;
-  grid-row-gap: 25px;
-  justify-content: center;
-  align-items: center;
+@media screen and (min-width: 1224px) {
+  .movie-list {
+   display: grid;
+   grid-template-columns: 200px 200px 200px 200px 200px;
+   grid-column-gap: 15px;
+   grid-row-gap: 25px;
+   justify-content: center;
+   align-items: center;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+  .movie-list {
+    display: flex;
+    flex-direction: column;
+  }
 }

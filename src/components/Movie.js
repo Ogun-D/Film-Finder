@@ -1,6 +1,5 @@
 import React from 'react';
 import '../css/Movie.css'
-// import App from '../App.js'
 
 class Movie extends React.Component {
 
@@ -8,7 +7,7 @@ class Movie extends React.Component {
   handleClick = () => {
     const title = this.props.title;
     this.props.selectedMovie('t', title);
-    // console.log(this);
+    window.scrollTo(0, 0);
   }
 
   render() {

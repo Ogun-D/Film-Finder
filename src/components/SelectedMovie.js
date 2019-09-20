@@ -31,13 +31,3 @@ const SelectedMovie = (props) => {
 }
 
 export default SelectedMovie;
-
-// class SelectedMovie extends React.Component {
-//   render() {
-//     return(
-//       <div className="selected-movie">
-
-//       </div>
-//     )
-//   }
-// }
